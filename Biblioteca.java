@@ -17,7 +17,7 @@ public class Biblioteca {
     
     //METODO PARA VRIFICAR SENHA
     public boolean autenticarAdm(String senha){
-        return SENHA_ADM_PADRAO.equals(senha);
+        return SENHA_ADM_PADRAO.equals(senha); // o equals compara a senha do admin
     }
     
     //METODO PARA BUSCAR LIVRO
@@ -30,7 +30,7 @@ public class Biblioteca {
         return null;
     }
     
-    //METODO PARA BUSCAR LIVRO
+    //METODO PARA BUSCAR USUARIO
     public Usuario buscarUsuarioPorId(int idUsuario){
         for (Usuario usuario : usuarios){
             if(usuario.getId()==idUsuario){
@@ -65,4 +65,19 @@ public class Biblioteca {
     livros.add(livro);
     return "livro "+titulo+ "cadastrado.";
 }
+    
+    //METODO PARA CADASTRAR O USUARIO
+    public String cadUsuario(String nome, String email){
+        Usuario usuario = new Usuario(nome, email);
+        usuarios.add(usuario);
+        return "Usuario "+ nome +"cadastrado com sucesso";
+    }    
+    
+    //METODO PARA CADASTRAR ADM
+    public String cadAdm (String nome, String email){
+        Adm adm = new Adm (nome, email);
+        adms.add(adm);
+        return "O administrador"+nome+" foi cadastrado";
+    }
+    
 }
