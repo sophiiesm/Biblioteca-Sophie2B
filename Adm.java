@@ -18,7 +18,7 @@ public class Adm extends Usuario{
     }
     
     //@Override
-    public String exibirInfoAdm(){
+    public String exibirInfo(){
         String info = "ID: "+getId()+", Usuario: "+getNome()+", Email: "+getEmail()+", Cargo: "+cargo;
         return info;
     }

@@ -60,7 +60,7 @@ public class Livro {
     }
     
     //METODO PARA EXIBIR AS INFORMAÇÕES
-    public String exibirInfoLivro(){
+    public String exibirInfo(){
         String info = "Livro | ISBN: "+isbn+", Titulo: "+titulo+", Autor: "+autor+", Ano: "+ano+", Disponivel: "+isDisponivel;
         if(!isDisponivel && idUsuarioEmprestadoPara!=0){
             info+=", Emprestado para o ID usuario: "+idUsuarioEmprestadoPara;

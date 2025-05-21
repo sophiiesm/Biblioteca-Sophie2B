@@ -56,7 +56,7 @@ public class Biblioteca {
         if(titulo==null
         || titulo.trim().isEmpty()
         || autor==null
-        || autor.trim().isEmpty())
+        || autor.trim().isEmpty()){
         
         return "Erro: Titulo ou autor nao podem ser validos.";
     }
@@ -64,4 +64,5 @@ public class Biblioteca {
     Livro livro = new Livro(titulo, autor, ano);
     livros.add(livro);
     return "livro "+titulo+ "cadastrado.";
+}
 }
