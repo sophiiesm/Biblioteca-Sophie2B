@@ -50,7 +50,7 @@ public class Livro {
     }
     
     //CONSTRUTOR LIVRO
-    public Livro(String titulo, String autor, int ano){
+    public Livro(String titulo, String autor){
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;

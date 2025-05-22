@@ -61,14 +61,14 @@ public class Biblioteca {
         return "Erro: Titulo ou autor nao podem ser validos.";
     }
     
-    Livro livro = new Livro(titulo, autor, ano);
+    Livro livro = new Livro(titulo, autor);
     livros.add(livro);
     return "livro "+titulo+ "cadastrado.";
 }
-    
-    //METODO PARA CADASTRAR O USUARIO
     public String cadUsuario(String nome, String email){
         Usuario usuario = new Usuario(nome, email);
+    
+    //METODO PARA CADASTRAR O USUARIO
         usuarios.add(usuario);
         return "Usuario "+ nome +"cadastrado com sucesso";
     }    
@@ -78,6 +78,5 @@ public class Biblioteca {
         Adm adm = new Adm (nome, email);
         adms.add(adm);
         return "O administrador"+nome+" foi cadastrado";
-    }
-    
+    }    
 }
