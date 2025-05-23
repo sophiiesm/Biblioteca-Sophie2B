@@ -50,7 +50,7 @@ public class Livro {
     }
     
     //CONSTRUTOR LIVRO
-    public Livro(String titulo, String autor){
+    public Livro(String titulo, String autor, int ano){
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
@@ -60,7 +60,7 @@ public class Livro {
     }
     
     //METODO PARA EXIBIR AS INFORMAÇÕES
-    public String exibirInfo(){
+    public String exibirInfoLivro(){
         String info = "Livro | ISBN: "+isbn+", Titulo: "+titulo+", Autor: "+autor+", Ano: "+ano+", Disponivel: "+isDisponivel;
         if(!isDisponivel && idUsuarioEmprestadoPara!=0){
             info+=", Emprestado para o ID usuario: "+idUsuarioEmprestadoPara;

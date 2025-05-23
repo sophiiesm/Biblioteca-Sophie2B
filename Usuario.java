@@ -34,7 +34,7 @@ public class Usuario {
     }
     
     //METODO PARA EXIBIR AS INFORMAÇÕES DO USUARIO
-    public String exibirInfoEmail(){
+    public String exibirInfoUsuario(){
         String info = "Id: "+id+", Usuario: "+nome+", Email: "+email;
         return info;
     }
